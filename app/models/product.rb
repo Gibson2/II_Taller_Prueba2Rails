@@ -1,11 +1,13 @@
 class Product < ApplicationRecord
   belongs_to :category
   validates :price, presence: true
-  before_save :premium_false
+  before_save :premium_is_false
 
-  def productwithprice
+  def premium_is_false
 
-  	if pr.nil?
+  	if self.premium.nil?
+
+  		self.premium = false
 
   	end
 
