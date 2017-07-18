@@ -11,16 +11,19 @@
 
 #Product.create([{ name: 'Product_1', price: 100, category_id: 1 }, { name: 'Product_2', price: 200, category_id: 1 }, { name: 'Product_3', price: 50, category_id: 2 }, { name: 'Product_4', price: 60, category_id: 2 }, { name: 'Product_5', price: 5, category_id: 3 }, { name: 'Product_6', price: 10, category_id: 3 }])
 
-category = Category.find_by(name:'Bueno_3')
+Product.destroy_all
+Category.destroy_all
 
-category.product.build(name: 'Product_8', price: 1).save
+#category = Category.find_by(name:'Bueno_3')
 
-Category.last.destroy.save
+#category.product.build(name: 'Product_8', price: 1).save
 
-Product.last.update.(premium:true)
+#Category.last.destroy.save
 
-Category.each do |c|
+#Product.last.update.(premium:true)
 
-	c.name.upcase.save
+Category.all.each do |c|
+
+	c.name.upcase!.save!
 
 	end

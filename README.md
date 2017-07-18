@@ -37,6 +37,7 @@ diagrama, y escoger donde agregar la columna
 con la clave foránea, si en el producto o
 categoría.
 
+  gem 'railroady' #gema para los graficos
 
 - Revisar la migración antes de correr rake
 db:migrate.
@@ -47,6 +48,7 @@ db:migrate.
 
 Añadir los archivos después de la migración a
 GIT.
+
 Hacer push a Github de la rama development.
 Revisar la migración antes de correr rake
 db:migrate.
@@ -60,8 +62,9 @@ db:migrate.
 
 Después de agregar las relaciones belongs_to
 y has_many generar el diagrama de nuevo y
-observar la diferencia4. El modelo de producto solo debe aceptar productos
-con precios.
+observar la diferencia
+
+4. El modelo de producto solo debe aceptar productos con precios.
 
 
 
